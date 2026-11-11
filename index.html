@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="eng-ca">
   <head>
+    <meta charset="UTF-8">
     <meta 
           name="viewport"
           content="width=device-width, initial-scale=1.0"
-          charset="UTF-8">
+          >
     <title>Exercise 8: Responsive Web Design</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
     <style>
@@ -12,14 +13,32 @@
       font-family: "Pacifico", cursive;
       font-size: 30px;
       background-color: aqua;
-      }
+      } 
 
       /* Responsive Design Additions */
-
+      /*mobile display*/
+      @media screen and (max-width : 599px){
+        body{
+        background-color: yellow;
+          font-size: 0.75em;}
+        img{
+          width: 100%;
+        }
+        p{
+          width: 100%;
+        }
+      }
       /*desktop display*/
-      @media (min-width : 600px){
+      @media screen and (min-width : 600px){
+        body{
+          background-color: aqua;
+          font-size: 1em;
+        }
         img {
           width: 800px;
+        }
+        p {
+          width: 600px;
         }
       }
       /* misc. styling */
